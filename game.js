@@ -29,7 +29,14 @@ const NORMAL_CHOICES = ['rock', 'paper', 'scissors'];
     let win = true;
     if(player === 'rock' && computer === 'paper' ||
       player === 'paper' && computer === 'scissors' ||
-      player === 'scissors' && computer === 'rock') {
+      player === 'scissors' && computer === 'rock' ||
+      player === 'lizard' && computer === 'rock' ||
+      player === 'spock' && computer === 'lizard' ||
+      player === 'scissors' && computer === 'spock' ||
+      player === 'lizard' && computer === 'scissors' ||
+      player === 'paper' && computer === 'lizard' ||
+      player === 'spock' && computer === 'paper' ||
+      player === 'rock' && computer === 'spock') {
       win = false;
       id('result').textContent = 'YOU LOSE';
     } else if(player === computer) {
