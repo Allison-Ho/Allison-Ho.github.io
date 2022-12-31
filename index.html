@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=”utf-8”>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <script src="game.js"></script>
+	  <title>Rock, Paper, Scissors</title>
+  </head>
+
+  <body>
+    <div id="nav">
+      <a href="index.html" class="navbar">ROCK, PAPER, SCISSORS</a>
+      <a href="hard.html" class="navbar">ROCK, PAPER, SCISSORS, LIZARD, SPOCK</a>
+      <a href="rule.html">RULE</a>
+    </div>
+
+    <section class="header">
+      <h1>Rock, Paper, Scissors</h1>
+      <div id="scoreboard">
+        <span>Score</span>
+        <span id="score">0</span>
+      </div>
+    </section>
+
+    <section id="gameboard">
+      <div id="choices">
+        <img src="img/rock.jpg" alt="rock">
+        <img src="img/paper.jpg" alt="paper">
+        <img src="img/scissors.jpg" alt="scissors">
+      </div>
+    </section>
+
+    <section id="gameview" class="hidden">
+      <section id="board">
+        <div id="playerside">
+          <h2>You picked</h2>
+          <img id="player">
+        </div>
+
+        <div id="resultview">
+          <p id="result"></p>
+          <button>PLAY AGAIN</button>
+        </div>
+
+        <div id="computerside">
+          <h2>The computer picked</h2>
+          <img id="computer">
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
